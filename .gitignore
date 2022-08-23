@@ -1,0 +1,6 @@
+*.lock
+*.DS_Store
+dist/
+project.config.json
+project.private.config.json
+.git

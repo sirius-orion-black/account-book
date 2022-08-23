@@ -1,0 +1,87 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "小账簿"
+      }
+    },
+    {
+      "path": "pages/detailed/index",
+      "style": {
+        "navigationBarTitleText": "明细"
+      }
+    },
+    {
+      "path": "pages/statistics/index",
+      "style": {
+        "navigationBarTitleText": "统计图"
+      }
+    },
+    {
+      "path": "pages/establish/index",
+      "style": {
+        "navigationBarTitleText": "记账"
+      }
+    },
+    {
+      "path": "pages/me/index",
+      "style": {
+        "navigationBarTitleText": "个人中心"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小账簿",
+    "navigationBarBackgroundColor": "#3c78d8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    // "iconfontSrc": "./static/font/iconfont.ttf",
+    "color": "#090909",
+    "selectedColor": "#3c78d8",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle":"black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./static/img/nav/index.png",
+        "selectedIconPath": "./static/img/nav/index_hover.png"
+      },
+      {
+        "pagePath": "pages/detailed/index",
+        "text": "明细",
+        "iconPath": "./static/img/nav/detailed.png",
+        "selectedIconPath": "./static/img/nav/detailed_hover.png"
+      },
+      {
+        "pagePath": "pages/establish/index",
+        "text": "记账",
+        "iconPath": "./static/img/nav/establish.png",
+        "selectedIconPath": "./static/img/nav/establish_hover.png"
+      },
+      {
+        "pagePath": "pages/statistics/index",
+        "text": "统计",
+        "iconPath": "./static/img/nav/statistics.png",
+        "selectedIconPath": "./static/img/nav/statistics_hover.png"
+      },
+      {
+        "pagePath": "pages/me/index",
+        "text": "我",
+        "iconPath": "./static/img/nav/me.png",
+        "selectedIconPath": "./static/img/nav/me_hover.png"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      // uni-ui 规则如下配置
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  }
+}
